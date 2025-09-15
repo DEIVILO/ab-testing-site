@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import ABTestScript from '@/components/ABTestScript'
 import { Analytics } from '@vercel/analytics/react'
@@ -20,13 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Analytics script */}
-        <script src="http://localhost:3000/api/integrations/cmflmflzz004lwjobmi3nb8qz/script"></script>
+        {/* Analytics script will be loaded in body for better performance */}
       </head>
       <body className={inter.className}>
         {children}
         <ABTestScript />
         <Analytics />
+        <Script 
+          src="http://localhost:3000/api/integrations/cmflmflzz004lwjobmi3nb8qz/script" 
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   )
