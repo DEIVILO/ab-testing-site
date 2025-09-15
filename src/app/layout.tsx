@@ -20,24 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Your A/B testing snippet would be injected here */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Placeholder for your external A/B testing snippet
-              // This is where you would inject your actual snippet
-              console.log('A/B Testing Snippet Placeholder - Replace with your actual snippet');
-              
-              // Example of what your snippet might look like:
-              // (function() {
-              //   var script = document.createElement('script');
-              //   script.src = 'https://your-cdn.com/ab-testing-snippet.js';
-              //   script.async = true;
-              //   document.head.appendChild(script);
-              // })();
-            `
-          }}
-        />
+        {/* Analytics script */}
+        <script src="http://localhost:3000/api/integrations/cmflmflzz004lwjobmi3nb8qz/script"></script>
       </head>
       <body className={inter.className}>
         {children}
