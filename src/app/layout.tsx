@@ -28,7 +28,7 @@ export default function RootLayout({
         <ABTestScript />
         <Analytics />
         <Script 
-          src="http://localhost:3000/api/integrations/cmflmflzz004lwjobmi3nb8qz/script" 
+          src="https://abai-one.vercel.app/api/integrations/cmflmflzz004lwjobmi3nb8qz/script" 
           strategy="beforeInteractive"
         />
       </body>
