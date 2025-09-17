@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
-import ABTestScript from '@/components/ABTestScript'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +24,6 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <ABTestScript />
         <Analytics />
         <Script 
           src="https://abai-one.vercel.app/api/integrations/cmflmflzz004lwjobmi3nb8qz/script" 
