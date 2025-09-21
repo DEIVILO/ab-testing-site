@@ -26,7 +26,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <Script 
-          src="https://abai-one.vercel.app/api/integrations/abgen_sk_mfqp8zii_hdanz4/script" 
+          src="https://abai-one.vercel.app/api/integrations/abgen_sk_mfu2n0bd_gylccv/script" 
           strategy="beforeInteractive"
         />
       </body>
